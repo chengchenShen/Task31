@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="280dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:text="SIT305 Quiz App"
+        android:textSize="80px"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+         />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Enter your name:"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="223dp"
+        android:layout_height="64dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="-40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/nameinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="223dp"
+        android:layout_height="93dp"
+        android:background="@drawable/button_shape"
+        android:text="Start"
+        android:textColor="@color/black"
+        android:textSize="100px"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@android:color/secondary_text_dark_nodisable"
+        />
+
+
+
+</LinearLayout>
